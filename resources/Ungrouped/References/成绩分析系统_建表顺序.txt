@@ -1,0 +1,14 @@
+dbName SchoolManager
+1  teacher
+2  classInfo
+3  student
+4  restPwd
+5  lesson
+6  courseArrangement 课程安排
+7  examSchedule  考试安排
+8  Score
+
+
+1 sysRight 权限表
+2 sysRole  角色表
+3 sysRoleRight 角色权限关系表

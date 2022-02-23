@@ -1,0 +1,9 @@
+[ConnectionProfile]
+ConnectionType=JDBC
+Dbms=SNC SQL Native Client
+DisableBind=0
+Driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+JarFiles=E:\课程体系\22_项目演示\07_ShoppingBook_3\WebRoot\WEB-INF\lib\sqljdbc.jar
+LogId=sa
+TrimSpaces=0
+URL=jdbc:sqlserver://127.0.0.1:1433;DatabaseName=yun4jbookzrl
