@@ -1,0 +1,168 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "frame1"
+			"visible": true
+			"title": "TeacherFrame"
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JTree" ) {
+				name: "tree1"
+				"model": new javax.swing.tree.DefaultTreeModel( new javax.swing.tree.DefaultMutableTreeNode {
+					userObject: "系统菜单"
+					add( new javax.swing.tree.DefaultMutableTreeNode {
+						userObject: "基础信息管理"
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "班级"
+						} )
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "同学"
+						} )
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "课程"
+						} )
+					} )
+					add( new javax.swing.tree.DefaultMutableTreeNode {
+						userObject: "考试管理"
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "分数"
+						} )
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "考试安排"
+						} )
+					} )
+					add( new javax.swing.tree.DefaultMutableTreeNode {
+						userObject: "个人信息"
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "查看个人信息"
+						} )
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "设置密保"
+						} )
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "修改密码"
+						} )
+					} )
+				} )
+				addEvent( new FormEvent( "javax.swing.event.TreeSelectionListener", "valueChanged", "treeValueChanged", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 32
+				"width": 185
+				"height": 755
+			} )
+			add( new FormContainer( "javax.swing.JDesktopPane", new FormLayoutManager( class javax.swing.JDesktopPane ) ) {
+				name: "desktopPane1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 1040
+				"height": 755
+				"x": 200
+				"y": 32
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel1"
+				"border": &EtchedBorder0 new javax.swing.border.EtchedBorder( 1, null, null )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "timeLab"
+					"text": "text"
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 460
+					"y": 0
+					"width": 230
+					"height": 35
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 1245
+				"height": 50
+				"x": 0
+				"y": -2
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "panel2"
+				"border": #EtchedBorder0
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "InfoMsg"
+					"text": "Hello World"
+					"horizontalAlignment": 2
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 0
+					"width": 1235
+					"height": 35
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 1235
+				"height": 35
+				"x": 5
+				"y": 795
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "基础数据"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuStuMan"
+						"text": "学生管理"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuStuManMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "班级管理"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuClassInfoManMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "课程管理"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuLesManMousePressed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "考试管理"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"text": "分数查询"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuScoManMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem7"
+						"text": "考试安排"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuExamSchMousePressed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu4"
+					"text": "个人信息"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "查看个人信息"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuShowPersonalInformationMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem5"
+						"text": "设置密保问题"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuSetSecretProtectionMousePressed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem6"
+						"text": "修改密码"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "menuChangePasswordMousePressed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 1250, 885 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

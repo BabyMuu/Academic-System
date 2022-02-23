@@ -1,0 +1,160 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "esFrame"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			"visible": true
+			"resizable": false
+			"title": "新建课程"
+			"background": sfield java.awt.Color gray
+			"maximizedBounds": new java.awt.Rectangle( 0, 0, 0, 0 )
+			"name": "teacherFrame"
+			auxiliary() {
+				"JavaCodeGenerator.variableModifiers": 4
+			}
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "confirm2"
+				"text": "Confirm"
+				"border": &EmptyBorder0 new javax.swing.border.EmptyBorder( 5, 5, 5, 5 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "confirmMousePressed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 180
+				"y": 355
+				"width": 110
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancel"
+				"text": "Cancel"
+				"border": #EmptyBorder0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 365
+				"y": 355
+				"width": 110
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "ret"
+				"text": "Return"
+				"border": #EmptyBorder0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 110
+				"x": 550
+				"y": 355
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "课程安排编号"
+				"font": &Font0 new java.awt.Font( "楷体", 1, 16 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 35
+				"x": 60
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "考试时间"
+				"font": #Font0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 75
+				"height": 35
+				"x": 90
+				"y": 205
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "状态"
+				"font": #Font0
+				"horizontalAlignment": 0
+				"horizontalTextPosition": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 75
+				"height": 35
+				"x": 420
+				"y": 205
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "考试概述"
+				"font": #Font0
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 75
+				"height": 35
+				"x": 420
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textContext"
+				"border": &LineBorder0 new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"foreground": new java.awt.Color( 67, 73, 74, 255 )
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 200
+				"height": 30
+				"x": 510
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textCAId"
+				"border": #LineBorder0
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 200
+				"height": 30
+				"x": 180
+				"y": 110
+			} )
+			add( new FormComponent( "com.eltima.components.ui.DatePicker" ) {
+				name: "Dataexam"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"foreground": new java.awt.Color( 102, 102, 102, 255 )
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 200
+				"height": 30
+				"x": 180
+				"y": 205
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textState"
+				"border": #LineBorder0
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 200
+				"height": 30
+				"x": 510
+				"y": 205
+			} )
+			add( new FormComponent( "javax.swing.JEditorPane" ) {
+				name: "editorPane1"
+				"border": new javax.swing.border.TitledBorder( new javax.swing.border.LineBorder( sfield java.awt.Color lightGray, 1, false ), "基本信息", 2, 0, new java.awt.Font( "隶书", 1, 16 ), sfield java.awt.Color orange )
+				"editable": false
+				"background": sfield java.awt.Color gray
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 50
+				"y": 30
+				"width": 700
+				"height": 285
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 810, 450 )
+			"location": new java.awt.Point( 175, 180 )
+		} )
+	}
+}

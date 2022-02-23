@@ -1,0 +1,190 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "frame1"
+			"resizable": false
+			"title": "系统登录-成绩管理分析系统"
+			"visible": true
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioFirst"
+				"text": "教师"
+				"selected": true
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 0, sfield java.awt.Color black )
+				"borderPainted": true
+				"horizontalAlignment": 0
+				"$buttonGroup": new FormReference( "roleGroup" )
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 90
+				"height": 35
+				"x": 350
+				"y": 295
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioSecond"
+				"text": "学生"
+				"border": new javax.swing.border.MatteBorder( 1, 0, 1, 1, sfield java.awt.Color black )
+				"borderPainted": true
+				"horizontalAlignment": 0
+				"$buttonGroup": new FormReference( "roleGroup" )
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 110
+				"height": 35
+				"x": 440
+				"y": 295
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labeUser"
+				"text": "帐号: "
+				"font": &Font0 new java.awt.Font( "楷体", 1, 16 )
+				"horizontalAlignment": 4
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/lib/png/user.png" )
+				"foreground": sfield java.awt.Color orange
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 35
+				"x": 250
+				"y": 345
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelPwd"
+				"text": "密码: "
+				"font": #Font0
+				"horizontalAlignment": 4
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/lib/png/password.png" )
+				"foreground": sfield java.awt.Color orange
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 35
+				"x": 250
+				"y": 395
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labeRole"
+				"text": "角色: "
+				"font": #Font0
+				"horizontalAlignment": 4
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/lib/png/role.png" )
+				"foreground": sfield java.awt.Color orange
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 35
+				"x": 250
+				"y": 295
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textId"
+				"border": &LineBorder0 new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"foreground": new java.awt.Color( 102, 102, 102, 255 )
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "submitKeyPressed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 200
+				"height": 35
+				"x": 350
+				"y": 345
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "textPwd"
+				"border": #LineBorder0
+				"foreground": new java.awt.Color( 102, 102, 102, 255 )
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 4
+				}
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "submitKeyPressed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 200
+				"height": 35
+				"x": 350
+				"y": 395
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnLogin"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/lib/png/login.png" )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "btnLoginMousePressed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 245
+				"y": 445
+				"height": 50
+				"width": 50
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnReset"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/lib/png/reset.png" )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "btnResetMousePressed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 50
+				"height": 50
+				"x": 435
+				"y": 445
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnForgotPassword"
+				"selectedIcon": new com.jformdesigner.model.SwingIcon( 0, "/lib/png/forgetPassword.png" )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/lib/png/forgetPassword.png" )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "btnForgotPasswordMousePressed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 50
+				"height": 50
+				"x": 340
+				"y": 445
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnCallUs"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/lib/png/CallUs.png" )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "btnCallUsMousePressed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 50
+				"height": 50
+				"x": 525
+				"y": 445
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "HintMsg"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 495
+				"width": 800
+				"height": 27
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/lib/png/me3.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": -15
+				"y": 25
+				"width": 840
+				"height": 310
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "img"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/lib/png/home.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 800
+				"height": 535
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 185, 60 )
+			"size": new java.awt.Dimension( 800, 555 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "roleGroup"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 631 )
+		} )
+	}
+}

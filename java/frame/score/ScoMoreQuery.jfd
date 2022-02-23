@@ -1,0 +1,198 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"$sizePolicy": 1
+			"$locationPolicy": 1
+			"title": "教师查询(高级查询)"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "contentPanel"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labScoreId"
+					"text": "分数编号"
+					"font": &Font0 new java.awt.Font( "楷体", 1, 16 )
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 35
+					"x": 70
+					"y": 40
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labEsId"
+					"text": "考试编号"
+					"font": #Font0
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 35
+					"x": 430
+					"y": 40
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labStuNum"
+					"text": "学生编号"
+					"font": #Font0
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 35
+					"x": 75
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labScoBet"
+					"text": "分数区间"
+					"font": #Font0
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 35
+					"x": 430
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textScoNum"
+					"border": &LineBorder0 new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+					"background": &Color1 new java.awt.Color( 128, 128, 128, 255 )
+					"font": &Font1 new java.awt.Font( "Courier New", 0, 18 )
+					"horizontalAlignment": 2
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 0
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 225
+					"height": 35
+					"x": 155
+					"y": 40
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textEsNum"
+					"border": #LineBorder0
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"background": #Color1
+					"font": new java.awt.Font( "Courier New", 0, 18 )
+					"horizontalAlignment": 2
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 0
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 240
+					"height": 35
+					"x": 530
+					"y": 40
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textStuNum"
+					"border": #LineBorder0
+					"foreground": #Color0
+					"background": #Color1
+					"font": #Font1
+					"horizontalAlignment": 2
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 0
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 225
+					"height": 35
+					"x": 155
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textScoMin"
+					"border": #LineBorder0
+					"foreground": #Color0
+					"background": #Color1
+					"font": #Font1
+					"horizontalAlignment": 2
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 0
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 95
+					"height": 35
+					"x": 530
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textScoMax"
+					"border": #LineBorder0
+					"foreground": #Color0
+					"background": #Color1
+					"font": #Font1
+					"horizontalAlignment": 2
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 0
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 95
+					"height": 35
+					"x": 675
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "~"
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 26 )
+					"horizontalTextPosition": 0
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 50
+					"height": 35
+					"x": 625
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "okButton"
+					"text": "OK"
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 0
+					}
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "okButtonMousePressed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"x": 320
+					"y": 195
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancelButton"
+					"text": "Cancel"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "cancelButtonMousePressed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"x": 475
+					"y": 195
+					"height": 35
+				} )
+				add( new FormComponent( "javax.swing.JEditorPane" ) {
+					name: "baseInfo"
+					"border": new javax.swing.border.TitledBorder( new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false ), "基础信息", 2, 0, new java.awt.Font( "楷体", 1, 16 ), sfield java.awt.Color orange )
+					"background": sfield java.awt.Color gray
+					"cursor": new java.awt.Cursor( 2 )
+					"editable": false
+					"autoscrolls": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 855
+					"height": 290
+					"x": 0
+					"y": 0
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 870
+				"height": 300
+				"x": 0
+				"y": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 870, 330 )
+			"location": new java.awt.Point( 155, 130 )
+		} )
+	}
+}
